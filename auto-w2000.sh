@@ -30,7 +30,7 @@
 # VARIABLES DEFINITION
 #
 ########################################################################################################################
-DIR_BASE="$HOME/scripts/hosts"
+DIR_BASE="$HOME/scripts/auto-w2000"
 DIR_DATA="$DIR_BASE/data"
 DIR_DOWNLOAD="$DIR_BASE/src"
 DIR_HASH="$DIR_BASE/hash"
@@ -107,6 +107,8 @@ then
     mv -f "${DIR_DATA}/HOSTS_NEW" "${SYSTEM_HOSTS_FILE}"
     # Clean up data folder
     rm -rf "${DIR_BASE}/data"
+    # Clean up src folder
+    rm -rf "${DIR_BASE}/src"
     # Set last succesful hash
     printf %s ${HASH} > "${DIR_HASH}/last_check.dat"
 fi
