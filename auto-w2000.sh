@@ -58,7 +58,7 @@ mkdir -p ${DIR_HASH}
 cd ${DIR_DOWNLOAD}
 
 # Try to download new hosts file
-if curl -O "${W2000_URL}" ;
+if curl -O "${W2000_URL}" > /dev/null 2>&1 ;
 then
     # Extract hash from downloaded file
     HASH=$(sha256sum "${DIR_DOWNLOAD}/hosts.zip" | cut -d ' ' -f1)
