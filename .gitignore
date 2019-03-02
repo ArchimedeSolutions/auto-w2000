@@ -1,0 +1,5 @@
+.DS_Store
+# for jetBrains
+.idea
+# for netbeans
+nbproject
