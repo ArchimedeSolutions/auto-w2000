@@ -1,0 +1,8 @@
+[Unit]
+Description=Automated hosts file updater
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Service]
+Type=oneshot
+ExecStart=/root/scripts/auto-w2000/auto-w2000.sh

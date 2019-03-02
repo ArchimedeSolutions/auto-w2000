@@ -1,0 +1,13 @@
+[Unit]
+Description=Automated hosts file updater
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Timer]
+Persistent=false
+OnBootSec=15min
+OnUnitActiveSec=1w
+Unit=auto-w2000.service
+
+[Install]
+WantedBy=default.target
